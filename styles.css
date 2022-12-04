@@ -1,0 +1,327 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/* landing page */
+
+.landing-container {
+    background-color: white;
+    margin-top: 8%;
+    
+}
+
+.container h1 {
+    font-size: 5.3rem;
+    font-weight: 800;
+    margin-bottom: 5%;
+    font-family: "Chivo", sans-serif;
+    color: #0099ff;
+}
+
+#compName {
+    font-family: "Rubik Mono One", sans-serif;
+}
+
+.container p {
+    font-size: 1.1rem;
+    margin-bottom: 3%;
+    margin-top: 7%;
+    color: gray;
+    font-family: 'Chivo', sans-serif;
+}
+
+.first-panel {
+    padding-top: 7%;
+}
+
+.first-panel button {
+    background-color: #0099ff;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.first-panel button:hover {
+    background-color: #acdeff;
+}
+
+.first-panel button:active {
+    background-color: #acdeff;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    margin-left: 10%;
+}
+
+
+/* to-do list page*/
+
+#bod {
+    position: relative;
+}
+
+.list-container {
+    text-align: center;
+    width: 45%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+#forma {
+    display: flex;
+    border: 1px solid black;
+}
+
+#forma input {
+    padding: 1%;
+}
+
+.icon-container {
+    flex-basis: 10%;
+    padding: 1%;
+    background-color: #0099ff;
+    color: white;
+    cursor: pointer;
+}
+
+.icon-container:hover {
+    background-color: #acdeff;
+}
+
+#forma input {
+    flex-basis: 90%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    border: none;
+}
+
+ul {
+    list-style: none;
+    padding-top: 5%;
+}
+
+#list {
+    padding-left: 0px;
+}
+
+ul li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.icons {
+    margin-left: auto;
+    margin-top: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #0099ff;
+}
+
+ul li i {
+    margin-right: 10px;
+}
+
+ul li i:hover {
+    color: #aedaf8;
+}
+
+ul li p {
+    margin-left: 1.5%;
+    margin-top: 15px;
+}
+
+.check {
+    margin-left: 1%;
+    margin-top: 18px;
+    height: 18px;
+    width: 18px;
+    accent-color: #0099ff;
+}
+
+#tag-container {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-top: 1.5%;
+    color: white;
+    background-color: #0099ff;
+    margin-top: 0px;
+}
+
+#tag-container h1 {
+    font-size: 5rem;
+    font-family: "Rubik Mono One", sans-serif;
+    margin-bottom: 1%;
+    padding-top: 1.5%;
+}
+
+#tag-container h3 {
+    padding-bottom: 1.5%;
+}
+
+.no-tasks i {
+    color: #0099ff;
+    margin-bottom: 3%;
+}
+
+.no-tasks h2 {
+    color: #0099ff;
+    font-size: 4rem;
+}
+
+.clear-button {
+    background-color: #0099ff;
+    color: white;
+    border: none;
+    border-radius: 5%;
+    width: 50%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.clear-button:hover {
+    background-color: #20a1f8;
+}
+
+.footer {
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    background-color: #0099ff;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer p {
+    margin-top: 2%;
+}
+
+.footer i {
+    color: white;
+}
+
+
+
+/* for smaller screens */
+
+@media only screen and (max-width: 767px) {
+    
+    /* to-do list */
+
+    .list-container {
+        width: 90%;
+    }
+
+    .check {
+        margin-right: 4%;
+    }
+
+    #tag-container h1 {
+        font-size: 3rem;
+        color: white;
+        padding: 3%;
+    }
+
+    #tag-container h3 {
+        font-size: 1.2rem;
+        color: white;
+        padding-bottom: 3%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    /* landing page */
+
+    .landing-container {
+        margin-top: 0px;
+        text-align: center;
+        padding: 3%;
+    }
+
+    .landing-container h1 {
+        font-size: 2.7rem;
+    }
+
+    .landing-container p {
+        font-size: .9rem;
+        margin-bottom: 6%;
+    }
+
+    img {
+        height: 270px;
+        width: 330px;
+        margin: 0px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .no-tasks i {
+        font-size: 3rem;
+    }
+
+    .no-tasks h2 {
+        font-size: 2rem;
+    }
+
+    .footer p {
+        margin-top: 7%;
+    }
+
+}
+
+/* galaxy fold screen */
+
+@media only screen and (max-width: 280px) {
+
+    /* to-do list */
+    #tag-container h1 {
+        font-size: 2.5rem;
+    }
+
+    /* landing page */
+
+    .first-panel button {
+        font-size: unset;
+    }
+
+    .landing-container h1 {
+        font-size: 2rem;
+    }
+
+    .landing-container p {
+        font-size: .8rem;
+    }
+
+    img {
+        height: 200px;
+        width: 230px;
+    }
+}
+
+/* tablet screens (iPad - mini) */
+
+@media only screen and (max-width: 768px) {
+
+    .no-tasks h2 {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .landing-container {
+        text-align: center;
+    }
+
+    img {
+        height: 430px;
+        width: 500px;
+    }
+}
+
+
+
