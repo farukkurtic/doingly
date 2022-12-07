@@ -187,25 +187,6 @@ ul li p {
     background-color: #20a1f8;
 }
 
-.footer {
-    width: 100%;
-    height: 10%;
-    text-align: center;
-    background-color: #0099ff;
-    position: fixed;
-    bottom: 0;
-}
-
-.footer p {
-    margin-top: 2%;
-}
-
-.footer i {
-    color: white;
-}
-
-
-
 /* for smaller screens */
 
 @media only screen and (max-width: 767px) {
@@ -266,11 +247,6 @@ ul li p {
     .no-tasks h2 {
         font-size: 2rem;
     }
-
-    .footer p {
-        margin-top: 7%;
-    }
-
 }
 
 /* galaxy fold screen */
