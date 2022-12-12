@@ -50,6 +50,7 @@ $('#list').on('click', '.fa-trash-can', function(){
         }
         else {
             $(".no-tasks").show();
+            $(".clear-button").hide();
         }
         console.log(numOfTasks);
     }
@@ -69,6 +70,7 @@ $('#list').on('click', '.fa-trash-can', function(){
         }
         else {
             $(".no-tasks").show();
+            $(".clear-button").hide();
         }
         console.log(numOfTasks);
     }
@@ -88,11 +90,11 @@ $('#list').on('click', '.fa-trash-can', function(){
         }
         else {
             $(".no-tasks").show();
+            $(".clear-button").hide();
         }
         console.log(numOfTasks);
     }
     else {
-        unfinishedTasks++;
         $("#tag-container h3").text("Hello, " + username + "! You have " + unfinishedTasks + " unfinished tasks left.");
         $(this).closest("li").remove();
         for(let i = 0; i < tasks.length; i++) {
@@ -107,6 +109,7 @@ $('#list').on('click', '.fa-trash-can', function(){
         }
         else {
             $(".no-tasks").show();
+            $(".clear-button").hide();
         }
         console.log(numOfTasks);
     }
@@ -121,7 +124,7 @@ $("#list").on("click", ".check", function() {
     }
     else if($(this).closest("li").html() === `<input type="checkbox" name="" id="" class="check"><p contenteditable="true">${($(this).closest("li").text())}</p><div class="icons"><i class="fa-solid fa-pen-to-square fa-lg"></i><i class="fa-solid fa-trash-can fa-lg"></i></div>`) {
         $(this).closest("li").html(`<input type="checkbox" name="" id="" class="check" checked><p contenteditable="true">${($(this).closest("li").text())}</p><div class="icons"><i class="fa-solid fa-pen-to-square fa-lg"></i><i class="fa-solid fa-trash-can fa-lg"></i></div>`);
-        unfinishedTasks++;
+        unfinishedTasks--;
         $("#tag-container h3").text("Hello, " + username + "! You have " + unfinishedTasks + " unfinished tasks left.");
     }
     else if($(this).closest("li").html() === `<input type="checkbox" name="" id="" class="check" checked><p contenteditable="true">${($(this).closest("li").text())}</p><div class="icons"><i class="fa-solid fa-pen-to-square fa-lg"></i><i class="fa-solid fa-trash-can fa-lg"></i></div>`){
@@ -146,7 +149,7 @@ $("#list").on("click", ".fa-pen-to-square", function() {
     else if ($(this).closest("li").html() === `<input type="checkbox" name="" id="" class="check" checked><p contenteditable="true"><s>${($(this).closest("li").text())}</s></p><div class="icons"><i class="fa-solid fa-pen-to-square fa-lg"></i><i class="fa-solid fa-trash-can fa-lg"></i></div>`) {
         $(this).closest("li").html(`<input type="checkbox" name="" id="" class="check" checked><p><s>${($(this).closest("li").text())}</s></p><div class="icons"><i class="fa-solid fa-pen-to-square fa-lg"></i><i class="fa-solid fa-trash-can fa-lg"></i></div>`);
     }
-    else { 
+    else {
         $(this).closest("li").html(`<input type="checkbox" name="" id="" class="check" checked><p contenteditable="true"><s>${($(this).closest("li").text())}</s></p><div class="icons"><i class="fa-solid fa-pen-to-square fa-lg"></i><i class="fa-solid fa-trash-can fa-lg"></i></div>`);
     }
 })
